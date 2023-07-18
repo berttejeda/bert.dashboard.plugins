@@ -27,8 +27,6 @@ def main():
     symbol_u = symbol.upper()
     symbol_articles = finviz.get_news(symbol_u)[0:limit]
     output[f"Here are {limit} articles for {symbol_u}"] = symbol_articles
-  print(output)
-  quit()
   output_json = json.dumps(output)
   output_bytes = output_json.encode("utf-8")
   output_encoded = base64.b64encode(output_bytes)
