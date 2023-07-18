@@ -1,0 +1,1 @@
+finviz @ git+https://github.com/berttejeda/finviz.git@main
